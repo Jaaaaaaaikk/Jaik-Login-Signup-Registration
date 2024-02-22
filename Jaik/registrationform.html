@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #7e47a3;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .survey-container {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .registration-form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .survey-container h2 {
+            text-align: center;
+        }
+        
+        .input-group {
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+        button {
+            width: 50%;
+            padding: 10px;
+            background-color: #540da5;
+            font-size: medium;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #resetbtn {
+            width: 50%;
+            padding: 10px;
+            background-color: #540da5;
+            font-size: medium;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #resetbtn:hover {
+            background-color: #0056b3;
+        }
+        
+        .survey-container .login-link {
+            margin-top: 2rem;
+        }
+  
+    </style>
+</head>
+<body>
+
+    <div class="survey-container">
+        <h2>STI Registration Form</h2>
+        <form class="registration-form">
+            <div class="input-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" placeholder="Enter First Name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="mname"> Middle Name:</label>
+                <input type="text" id="mname" placeholder="Enter Middle Name" name="name">
+            </div>
+
+            <div class="input-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" placeholder="Enter Last Name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" placeholder="e.g. 18" name="age" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="yrlevel">Yearlevel:</label>
+                <input type="text" id="yrlevel" placeholder="e.g. 2" name="yrlevel" required>
+            </div>
+
+            <div>
+                <label for="gender">Gender:</label><br>
+                <label for="male">Male</label>
+                <input type="radio" id="male"  name="gender" required>
+                <label for="female">Female</label>
+                <input type="radio" id="female"  name="gender" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="program">Program:</label><br>
+                <label for="bsit">BSIT</label>
+                <input type="radio" id="bsit"  name="program" required>
+                <label for="bstm">BSTM</label>
+                <input type="radio" id="bstm"  name="program" required>
+                <label for="bshm">BSHM</label>
+                <input type="radio" id="bshm"  name="program" required>
+            </div>
+                
+            <br>
+
+            <button type="submit">Submit</button>
+            
+            <div>
+                <input type="reset" id="resetbtn" name="reset">
+            </div>
+            
+            <div class="login-link">
+                Back to Login <a href="index.html">Click Here.</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
